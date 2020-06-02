@@ -1,0 +1,35 @@
+	var  url_popup  =  'https://www.facebook.com/B%C4%90S-S%C3%A0i-G%C3%B2n-House-106842741049206' ;
+
+      // <! [CDATA [
+	  // var url_ppp = 'http://bit.ly/1KmPNYe';
+      hàm  addEvent ( obj ,  eventName ,  func ) {
+        if  ( obj . Đính kèm )
+        {
+          obj . Đính kèm ( "bật"  +  eventName ,  func ) ;
+        }
+        khác  nếu ( obj . addEventListener )
+        {
+          obj . addEventListener ( eventName ,  func ,  true ) ;
+        }
+        khác
+        {
+          obj [ "trên"  +  eventName ]  =  func ;
+        }
+      }
+      addEvent ( cửa sổ ,  "tải" ,  hàm ( e ) {
+        addEvent ( tài liệu . body ,  "click" ,  hàm ( e )
+                 {
+                   var  params  =  'height =' + 1 + ', width ='  + 1 +  ', left = 9999, top = 9999, location = 0, thanh công cụ = 0, status = 0, menubar = 0, scrollbars = 0, thay đổi kích thước = 0 ' ;
+                   if ( tài liệu . cookie . indexOf ( "popup" )  ==  - 1 )
+                   {
+                     var  w  =  cửa sổ . mở ( url_popup , 'cửa sổ bật lên' ,  params ) ;
+                     nếu  ( w )
+                     {
+                       tài liệu . cookie  =  "popuphvfs = cửa sổ bật lên" ;
+                       w . mờ ( ) ;
+                     }
+                     cửa sổ . tập trung ( ) ;
+                   }
+                 } ) ;
+      } ) ;  
+      //]]>
